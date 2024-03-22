@@ -1,0 +1,590 @@
+{
+  "name": "home",
+  "type": "page",
+  "url": "/results",
+  "params": {},
+  "variables": [
+    {
+      "name": "salesForecastingApi",
+      "type": "open-api",
+      "id": "65f8fb38e84fea8b10b8ee09"
+    },
+    {
+      "name": "$notificationManager",
+      "type": "service"
+    },
+    {
+      "name": "showSingleProduct",
+      "type": "property",
+      "description": "",
+      "value": "true"
+    },
+    {
+      "name": "allProductFunction",
+      "type": "method",
+      "description": "",
+      "body": "if ($ctrl.allProduct = true) {\n    $ctrl.singleProduct = false;\n    $ctrl.showSingleProduct = false;\n    $ctrl.forecastRequestType = 'orders';\n} else {\n    $ctrl.singleProduct = true;\n    $ctrl.showSingleProduct = true;\n}",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": []
+    },
+    {
+      "name": "selectedProductFunction",
+      "type": "method",
+      "description": "",
+      "body": "if ($ctrl.singleProduct = true) {\n    $ctrl.allProduct = false;\n    $ctrl.showSingleProduct = true;\n    $ctrl.forecastRequestType = 'single_product';\n} else {\n    $ctrl.singleProduct = false;\n    $ctrl.showSingleProduct = false;\n}",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": []
+    },
+    {
+      "name": "form",
+      "type": "object",
+      "description": "This object holds all properties and functions for submitting new request",
+      "properties": [
+        {
+          "name": "startDate",
+          "type": "property",
+          "description": "Holds the start date input",
+          "value": ""
+        },
+        {
+          "name": "forecastLen",
+          "type": "property",
+          "description": "Holds the forecast length input",
+          "value": ""
+        },
+        {
+          "name": "forecastRequestType",
+          "type": "property",
+          "description": "",
+          "value": ""
+        },
+        {
+          "name": "getRequests",
+          "type": "method",
+          "description": "This function is for the GET method of the API",
+          "body": "// Assuming $ctrl.salesForecastingApi.service_Main is an AngularJS service or a similar service that returns a promise when called\n$ctrl.salesForecastingApi.service_Main({\n    startDate: '2024-02-01', \n    forecastLen: 5,\n    forecastRequestType: 'orders',\n    productId: 8098965881074,\n    variantId: 45184385286386\n})\n.then(response => {\n    // Assuming response.data contains the fetched data\n    $ctrl.fetchedData = response.data;\n})\n.catch(error => {\n    // Handle error\n    console.error('Error fetching data:', error);\n});\n",
+          "invokeOnLoad": true,
+          "isAsync": false,
+          "returnType": {
+            "name": "any"
+          },
+          "parameters": []
+        },
+        {
+          "name": "productIDinput",
+          "type": "property",
+          "description": "",
+          "value": ""
+        },
+        {
+          "name": "variantIDinput",
+          "type": "property",
+          "description": "",
+          "value": ""
+        },
+        {
+          "name": "allProductsSelect",
+          "type": "method",
+          "description": "",
+          "body": "if ($ctrl.form.forecastRequestType === 'orders') {\n    $ctrl.form.productIDinput = '';\n    $ctrl.form.variantIDinput = '';\n}\n",
+          "invokeOnLoad": false,
+          "isAsync": false,
+          "returnType": {
+            "name": "any"
+          },
+          "parameters": []
+        },
+        {
+          "name": "singleProductSelect",
+          "type": "method",
+          "description": "",
+          "body": "if ($ctrl.singleProduct = true) {\n    $ctrl.allProduct = false;\n    $ctrl.showSingleProduct = true;\n    $ctrl.forecastRequestType = 'single_product';\n} else {\n    $ctrl.singleProduct = false;\n    $ctrl.showSingleProduct = false;\n}",
+          "invokeOnLoad": false,
+          "isAsync": false,
+          "returnType": {
+            "name": "any"
+          },
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "name": "fetchedData",
+      "type": "array",
+      "description": "",
+      "children": []
+    }
+  ],
+  "children": [
+    {
+      "name": "div",
+      "nodeName": "div",
+      "elementId": "",
+      "attributes": [
+        {
+          "property": "data-id",
+          "value": "9IOnPF"
+        }
+      ],
+      "classList": [
+        "header"
+      ],
+      "conditionalClasses": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": "",
+        "trackByIndex": false
+      },
+      "styles": [
+        {
+          "property": "background-color",
+          "value": "#031149",
+          "enabled": true
+        },
+        {
+          "property": "padding",
+          "value": "2em",
+          "enabled": true
+        }
+      ],
+      "children": [
+        {
+          "name": "p",
+          "nodeName": "p",
+          "elementId": "",
+          "attributes": [
+            {
+              "property": "data-id",
+              "value": "UTNUr0"
+            }
+          ],
+          "classList": [],
+          "conditionalClasses": [],
+          "contentType": "text",
+          "displayExpression": "",
+          "events": {},
+          "iterate": {
+            "array": "",
+            "variable": "",
+            "trackByIndex": false
+          },
+          "styles": [
+            {
+              "property": "margin",
+              "value": "0",
+              "enabled": true
+            },
+            {
+              "property": "padding",
+              "value": "0",
+              "enabled": true
+            },
+            {
+              "property": "color",
+              "value": "#ffffff",
+              "enabled": true
+            },
+            {
+              "property": "font-size",
+              "value": "20px",
+              "enabled": true
+            },
+            {
+              "property": "font-weight",
+              "value": "bold",
+              "enabled": true
+            }
+          ],
+          "children": [
+            {
+              "name": "text",
+              "nodeName": "text",
+              "textContent": "Sales Forecasting Application",
+              "evaluate": false
+            }
+          ],
+          "comments": ""
+        }
+      ],
+      "comments": ""
+    },
+    {
+      "name": "div",
+      "nodeName": "div",
+      "elementId": "",
+      "attributes": [
+        {
+          "property": "data-id",
+          "value": "NHEEin"
+        }
+      ],
+      "classList": [],
+      "conditionalClasses": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": "",
+        "trackByIndex": false
+      },
+      "styles": [
+        {
+          "property": "width",
+          "value": "90%",
+          "enabled": true
+        },
+        {
+          "property": "margin",
+          "value": "0 auto",
+          "enabled": true
+        },
+        {
+          "property": "margin-top",
+          "value": "50px",
+          "enabled": true
+        }
+      ],
+      "children": [
+        {
+          "name": "home-component",
+          "nodeName": "home-component",
+          "elementId": "",
+          "attributes": [
+            {
+              "property": "data-id",
+              "value": "jiEaoh"
+            }
+          ],
+          "classList": [],
+          "conditionalClasses": [],
+          "contentType": "text",
+          "displayExpression": "",
+          "events": {},
+          "iterate": {
+            "array": "",
+            "variable": "",
+            "trackByIndex": false
+          },
+          "styles": [],
+          "children": [],
+          "comments": "",
+          "type": "custom-component",
+          "id": "65fd43cc3658460f73db7a27",
+          "expressions": [
+            {
+              "expression": "$ctrl.form.startDate",
+              "to": "startDate"
+            },
+            {
+              "expression": "$ctrl.form.forecastLen",
+              "to": "forecastLen"
+            },
+            {
+              "expression": "$ctrl.form.forecastRequestType",
+              "to": "forecastRequestType"
+            },
+            {
+              "expression": "$ctrl.form.productIDinput",
+              "to": "productIDinput"
+            },
+            {
+              "expression": "$ctrl.form.variantIDinput",
+              "to": "variantIDinput"
+            },
+            {
+              "expression": "$ctrl.fetchedData",
+              "to": "fetchedData"
+            },
+            {
+              "expression": "$ctrl.form.singleProductSelect()",
+              "to": "singleProduct"
+            },
+            {
+              "expression": "$ctrl.form.allProductsSelect()",
+              "to": "allProduct"
+            }
+          ]
+        },
+        {
+          "name": "div",
+          "nodeName": "div",
+          "elementId": "",
+          "attributes": [
+            {
+              "property": "data-id",
+              "value": "-0Tu4D"
+            }
+          ],
+          "classList": [],
+          "conditionalClasses": [],
+          "contentType": "text",
+          "displayExpression": "",
+          "events": {},
+          "iterate": {
+            "array": "",
+            "variable": "",
+            "trackByIndex": false
+          },
+          "styles": [],
+          "children": [
+            {
+              "name": "div",
+              "nodeName": "div",
+              "elementId": "",
+              "attributes": [
+                {
+                  "property": "data-id",
+                  "value": "LJKyHr"
+                }
+              ],
+              "classList": [],
+              "conditionalClasses": [],
+              "contentType": "text",
+              "displayExpression": "",
+              "events": {},
+              "iterate": {
+                "array": "",
+                "variable": "",
+                "trackByIndex": false
+              },
+              "styles": [
+                {
+                  "enabled": true,
+                  "property": "height",
+                  "value": "100% !important"
+                },
+                {
+                  "enabled": true,
+                  "property": "width",
+                  "value": "100% !important"
+                },
+                {
+                  "property": "margin-top",
+                  "value": "20px",
+                  "enabled": true
+                }
+              ],
+              "layout": {
+                "container": {
+                  "type": "box",
+                  "orientation": "row",
+                  "crossAxisAlignment": "stretch",
+                  "items": []
+                }
+              },
+              "children": [
+                {
+                  "name": "div",
+                  "nodeName": "div",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "data-id",
+                      "value": "9Z4VS4"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [
+                    {
+                      "property": "padding",
+                      "value": "10px",
+                      "enabled": true
+                    }
+                  ],
+                  "layout": {
+                    "cell": {
+                      "type": "box-item",
+                      "growFactor": 1,
+                      "shrinkFactor": 1,
+                      "mainSize": "100%"
+                    }
+                  },
+                  "children": [
+                    {
+                      "name": "Chart",
+                      "nodeName": "bln-chart",
+                      "elementId": "",
+                      "attributes": [
+                        {
+                          "property": "data-id",
+                          "value": "yr5vJp"
+                        },
+                        {
+                          "property": "core",
+                          "value": ""
+                        }
+                      ],
+                      "classList": [],
+                      "conditionalClasses": [],
+                      "contentType": "text",
+                      "displayExpression": "",
+                      "events": {},
+                      "iterate": {
+                        "array": "",
+                        "variable": "",
+                        "trackByIndex": false
+                      },
+                      "styles": [],
+                      "children": [],
+                      "comments": "",
+                      "type": "core-component",
+                      "id": "chart",
+                      "expressions": [
+                        {
+                          "expression": "[{\n    data: $ctrl.fetchedData[0].data,\n    label: \"Sales\",\n    fill: false,\n    parsing: {\n        xAxisKey: \"Date\",\n        yAxisKey: \"PredictedDailySales\"\n    },\n    backgroundColor: [\"#031149\"]\n}]",
+                          "to": "datasets"
+                        },
+                        {
+                          "expression": "\"Predicted Daily Sales\"",
+                          "to": "axisNameX"
+                        },
+                        {
+                          "expression": "\"Date\"",
+                          "to": "axisNameY"
+                        },
+                        {
+                          "expression": "\"Sales Forecast\"",
+                          "to": "title"
+                        },
+                        {
+                          "expression": "[\n\n]",
+                          "to": "labels"
+                        }
+                      ]
+                    }
+                  ],
+                  "comments": ""
+                },
+                {
+                  "name": "div",
+                  "nodeName": "div",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "data-id",
+                      "value": "pkp7Qd"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [
+                    {
+                      "property": "max-height",
+                      "value": "100vh",
+                      "enabled": true
+                    }
+                  ],
+                  "layout": {
+                    "cell": {
+                      "type": "box-item",
+                      "growFactor": 1,
+                      "shrinkFactor": 1,
+                      "mainSize": "100%"
+                    }
+                  },
+                  "children": [
+                    {
+                      "name": "Table",
+                      "nodeName": "bln-table",
+                      "elementId": "",
+                      "attributes": [
+                        {
+                          "property": "data-id",
+                          "value": "dgZjk_"
+                        },
+                        {
+                          "property": "core",
+                          "value": ""
+                        }
+                      ],
+                      "classList": [],
+                      "conditionalClasses": [],
+                      "contentType": "text",
+                      "displayExpression": "",
+                      "events": {},
+                      "iterate": {
+                        "array": "",
+                        "variable": "",
+                        "trackByIndex": false
+                      },
+                      "styles": [
+                        {
+                          "property": "--bln-table-header-bg-color",
+                          "value": "#031149",
+                          "enabled": true
+                        },
+                        {
+                          "property": "--bln-table-header-text-color",
+                          "value": "#fff",
+                          "enabled": true
+                        },
+                        {
+                          "property": "--bln-table-bg-color",
+                          "value": "#ffffff",
+                          "enabled": true
+                        },
+                        {
+                          "property": "--bln-table-hovered-bg-color",
+                          "value": "#cccccc",
+                          "enabled": true
+                        },
+                        {
+                          "property": "--bln-table-secondary-bg-color",
+                          "value": "#ebebeb",
+                          "enabled": true
+                        }
+                      ],
+                      "children": [],
+                      "comments": "",
+                      "type": "core-component",
+                      "id": "table",
+                      "expressions": [
+                        {
+                          "expression": "$ctrl.fetchedData[0].data",
+                          "to": "data"
+                        }
+                      ]
+                    }
+                  ],
+                  "comments": ""
+                }
+              ],
+              "comments": ""
+            }
+          ],
+          "comments": ""
+        }
+      ],
+      "comments": ""
+    }
+  ]
+}

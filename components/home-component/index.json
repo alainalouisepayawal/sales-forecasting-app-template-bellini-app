@@ -1,0 +1,1431 @@
+{
+  "type": "custom-component",
+  "name": "home-component",
+  "children": [
+    {
+      "name": "div",
+      "nodeName": "div",
+      "elementId": "",
+      "attributes": [
+        {
+          "property": "data-id",
+          "value": "fUfck3"
+        }
+      ],
+      "classList": [],
+      "conditionalClasses": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": "",
+        "trackByIndex": false
+      },
+      "styles": [
+        {
+          "enabled": true,
+          "property": "height",
+          "value": "100% !important"
+        },
+        {
+          "enabled": true,
+          "property": "width",
+          "value": "100% !important"
+        }
+      ],
+      "layout": {
+        "container": {
+          "type": "box",
+          "orientation": "row",
+          "crossAxisAlignment": "stretch",
+          "items": []
+        }
+      },
+      "children": [
+        {
+          "name": "div",
+          "nodeName": "div",
+          "elementId": "",
+          "attributes": [
+            {
+              "property": "data-id",
+              "value": "uh-b6k"
+            }
+          ],
+          "classList": [],
+          "conditionalClasses": [],
+          "contentType": "text",
+          "displayExpression": "",
+          "events": {},
+          "iterate": {
+            "array": "",
+            "variable": "",
+            "trackByIndex": false
+          },
+          "styles": [
+            {
+              "property": "max-width",
+              "value": "25%",
+              "enabled": true
+            }
+          ],
+          "layout": {
+            "cell": {
+              "type": "box-item",
+              "growFactor": 1,
+              "shrinkFactor": 1,
+              "mainSize": "100%"
+            }
+          },
+          "children": [
+            {
+              "name": "div",
+              "nodeName": "div",
+              "elementId": "",
+              "attributes": [
+                {
+                  "property": "data-id",
+                  "value": "xROLqx"
+                }
+              ],
+              "classList": [
+                "start-date"
+              ],
+              "conditionalClasses": [],
+              "contentType": "text",
+              "displayExpression": "",
+              "events": {},
+              "iterate": {
+                "array": "",
+                "variable": "",
+                "trackByIndex": false
+              },
+              "styles": [
+                {
+                  "property": "margin-bottom",
+                  "value": "20px",
+                  "enabled": true
+                }
+              ],
+              "children": [
+                {
+                  "name": "h3",
+                  "nodeName": "h3",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "data-id",
+                      "value": "LGUkRG"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [
+                    {
+                      "property": "padding",
+                      "value": "0",
+                      "enabled": true
+                    },
+                    {
+                      "property": "margin",
+                      "value": "0%",
+                      "enabled": true
+                    }
+                  ],
+                  "layout": {},
+                  "children": [
+                    {
+                      "name": "text",
+                      "nodeName": "text",
+                      "textContent": "START DATE",
+                      "evaluate": false
+                    }
+                  ],
+                  "comments": ""
+                },
+                {
+                  "name": "p",
+                  "nodeName": "p",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "data-id",
+                      "value": "9KAEri"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [
+                    {
+                      "property": "font-size",
+                      "value": "11px",
+                      "enabled": true
+                    },
+                    {
+                      "property": "margin",
+                      "value": "0",
+                      "enabled": true
+                    },
+                    {
+                      "property": "font-style",
+                      "value": "italic",
+                      "enabled": true
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "text",
+                      "nodeName": "text",
+                      "textContent": "When would you like to start analyzing sales data from?",
+                      "evaluate": false
+                    }
+                  ],
+                  "comments": ""
+                },
+                {
+                  "name": "Text Input",
+                  "nodeName": "bln-text-input",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    },
+                    {
+                      "property": "data-id",
+                      "value": "oZn6Mw"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [],
+                  "children": [],
+                  "comments": "",
+                  "type": "core-component",
+                  "id": "text-input",
+                  "expressions": [
+                    {
+                      "expression": "''",
+                      "to": "label"
+                    },
+                    {
+                      "expression": "\"'YYYY-MM-DD'\"",
+                      "to": "placeholder"
+                    },
+                    {
+                      "expression": "$ctrl.startDate",
+                      "to": "value"
+                    }
+                  ],
+                  "formControl": {
+                    "modelName": "value"
+                  }
+                }
+              ],
+              "comments": ""
+            }
+          ],
+          "comments": ""
+        },
+        {
+          "name": "div",
+          "nodeName": "div",
+          "elementId": "",
+          "attributes": [
+            {
+              "property": "data-id",
+              "value": "Qg4YWs"
+            }
+          ],
+          "classList": [],
+          "conditionalClasses": [],
+          "contentType": "text",
+          "displayExpression": "",
+          "events": {},
+          "iterate": {
+            "array": "",
+            "variable": "",
+            "trackByIndex": false
+          },
+          "styles": [
+            {
+              "property": "max-width",
+              "value": "20%",
+              "enabled": true
+            }
+          ],
+          "layout": {
+            "cell": {
+              "type": "box-item",
+              "growFactor": 1,
+              "shrinkFactor": 1,
+              "mainSize": "100%"
+            }
+          },
+          "children": [
+            {
+              "name": "div",
+              "nodeName": "div",
+              "elementId": "",
+              "attributes": [
+                {
+                  "property": "data-id",
+                  "value": "Wud-4v"
+                }
+              ],
+              "classList": [
+                "forecast-length"
+              ],
+              "conditionalClasses": [],
+              "contentType": "text",
+              "displayExpression": "",
+              "events": {},
+              "iterate": {
+                "array": "",
+                "variable": "",
+                "trackByIndex": false
+              },
+              "styles": [
+                {
+                  "property": "margin-bottom",
+                  "value": "20px",
+                  "enabled": true
+                }
+              ],
+              "layout": {},
+              "children": [
+                {
+                  "name": "h3",
+                  "nodeName": "h3",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "data-id",
+                      "value": "cK51oD"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [
+                    {
+                      "property": "padding",
+                      "value": "0",
+                      "enabled": true
+                    },
+                    {
+                      "property": "margin",
+                      "value": "0%",
+                      "enabled": true
+                    }
+                  ],
+                  "layout": {},
+                  "children": [
+                    {
+                      "name": "text",
+                      "nodeName": "text",
+                      "textContent": "FORECAST LENGTH",
+                      "evaluate": false
+                    }
+                  ],
+                  "comments": ""
+                },
+                {
+                  "name": "p",
+                  "nodeName": "p",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "data-id",
+                      "value": "-u0Bmr"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [
+                    {
+                      "property": "font-size",
+                      "value": "11px",
+                      "enabled": true
+                    },
+                    {
+                      "property": "margin",
+                      "value": "0",
+                      "enabled": true
+                    },
+                    {
+                      "property": "font-style",
+                      "value": "italic",
+                      "enabled": true
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "text",
+                      "nodeName": "text",
+                      "textContent": "How far ahead would you like to forecast?",
+                      "evaluate": false
+                    }
+                  ],
+                  "comments": ""
+                },
+                {
+                  "name": "Dropdown",
+                  "nodeName": "bln-dropdown",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    },
+                    {
+                      "property": "data-id",
+                      "value": "ZgN09a"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [],
+                  "children": [],
+                  "comments": "",
+                  "type": "core-component",
+                  "id": "dropdown",
+                  "expressions": [
+                    {
+                      "expression": "\"\"",
+                      "to": "label"
+                    },
+                    {
+                      "expression": "[{\n        label: \"15 days\",\n        value: \"15\"\n    },\n    {\n        label: \"30 days\",\n        value: \"30\"\n    },\n    {\n        label: \"60 days\",\n        value: \"60\"\n    },\n    {\n        label: \"3 months\",\n        value: \"90\"\n    },\n    {\n        label: \"6 months\",\n        value: \"180\"\n    },\n    {\n        label: \"1 year\",\n        value: \"365\"\n    }\n]",
+                      "to": "values"
+                    },
+                    {
+                      "expression": "$ctrl.forecastLen",
+                      "to": "value"
+                    }
+                  ],
+                  "formControl": {
+                    "modelName": "value"
+                  }
+                }
+              ],
+              "comments": ""
+            }
+          ],
+          "comments": ""
+        },
+        {
+          "name": "div",
+          "nodeName": "div",
+          "elementId": "",
+          "attributes": [
+            {
+              "property": "data-id",
+              "value": "eFHYKI"
+            }
+          ],
+          "classList": [],
+          "conditionalClasses": [],
+          "contentType": "text",
+          "displayExpression": "",
+          "events": {},
+          "iterate": {
+            "array": "",
+            "variable": "",
+            "trackByIndex": false
+          },
+          "styles": [
+            {
+              "property": "max-width",
+              "value": "25%",
+              "enabled": true
+            }
+          ],
+          "layout": {
+            "cell": {
+              "type": "box-item",
+              "growFactor": 1,
+              "shrinkFactor": 1,
+              "mainSize": "100%"
+            }
+          },
+          "children": [
+            {
+              "name": "div",
+              "nodeName": "div",
+              "elementId": "",
+              "attributes": [
+                {
+                  "property": "data-id",
+                  "value": "Q6goxj"
+                }
+              ],
+              "classList": [
+                "forecast-type"
+              ],
+              "conditionalClasses": [],
+              "contentType": "text",
+              "displayExpression": "",
+              "events": {},
+              "iterate": {
+                "array": "",
+                "variable": "",
+                "trackByIndex": false
+              },
+              "styles": [
+                {
+                  "property": "margin-bottom",
+                  "value": "10px",
+                  "enabled": true
+                }
+              ],
+              "children": [
+                {
+                  "name": "h3",
+                  "nodeName": "h3",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "data-id",
+                      "value": "xMjVmL"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [
+                    {
+                      "property": "padding",
+                      "value": "0",
+                      "enabled": true
+                    },
+                    {
+                      "property": "margin",
+                      "value": "0%",
+                      "enabled": true
+                    }
+                  ],
+                  "layout": {},
+                  "children": [
+                    {
+                      "name": "text",
+                      "nodeName": "text",
+                      "textContent": "FORECAST TYPE",
+                      "evaluate": false
+                    }
+                  ],
+                  "comments": ""
+                },
+                {
+                  "name": "p",
+                  "nodeName": "p",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "data-id",
+                      "value": "HIh3jm"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [
+                    {
+                      "property": "font-size",
+                      "value": "11px",
+                      "enabled": true
+                    },
+                    {
+                      "property": "margin",
+                      "value": "0",
+                      "enabled": true
+                    },
+                    {
+                      "property": "font-style",
+                      "value": "italic",
+                      "enabled": true
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "text",
+                      "nodeName": "text",
+                      "textContent": " What type of forecast are you interested in generating?",
+                      "evaluate": false
+                    }
+                  ],
+                  "comments": ""
+                },
+                {
+                  "name": "div",
+                  "nodeName": "div",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "data-id",
+                      "value": "GHWlZC"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [
+                    {
+                      "property": "display",
+                      "value": "flex",
+                      "enabled": true
+                    },
+                    {
+                      "property": "margin-top",
+                      "value": "5px",
+                      "enabled": true
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "div",
+                      "nodeName": "div",
+                      "elementId": "",
+                      "attributes": [
+                        {
+                          "property": "data-id",
+                          "value": "e2XU5Z"
+                        }
+                      ],
+                      "classList": [
+                        "all-product-btn"
+                      ],
+                      "conditionalClasses": [],
+                      "contentType": "text",
+                      "displayExpression": "",
+                      "events": {},
+                      "iterate": {
+                        "array": "",
+                        "variable": "",
+                        "trackByIndex": false
+                      },
+                      "styles": [
+                        {
+                          "property": "max-width",
+                          "value": "50%",
+                          "enabled": true
+                        },
+                        {
+                          "property": "margin-right",
+                          "value": "10px",
+                          "enabled": true
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "Button",
+                          "nodeName": "bln-button",
+                          "elementId": "",
+                          "attributes": [
+                            {
+                              "property": "core",
+                              "value": ""
+                            },
+                            {
+                              "property": "data-id",
+                              "value": "6CnyMh"
+                            }
+                          ],
+                          "classList": [],
+                          "conditionalClasses": [],
+                          "contentType": "text",
+                          "displayExpression": "",
+                          "events": {},
+                          "iterate": {
+                            "array": "",
+                            "variable": "",
+                            "trackByIndex": false
+                          },
+                          "styles": [
+                            {
+                              "property": "--bln-button-default-bg-color",
+                              "value": "#ededed",
+                              "enabled": true
+                            },
+                            {
+                              "property": "--bln-button-default-hovered-bg-color",
+                              "value": "#bebebe",
+                              "enabled": true
+                            },
+                            {
+                              "property": "--bln-button-default-active-bg-color",
+                              "value": "#001452",
+                              "enabled": true
+                            },
+                            {
+                              "property": "--bln-button-default-active-text-color",
+                              "value": "#fff",
+                              "enabled": true
+                            }
+                          ],
+                          "children": [],
+                          "comments": "",
+                          "type": "core-component",
+                          "id": "button",
+                          "expressions": [
+                            {
+                              "expression": "\"All Products\"",
+                              "to": "label"
+                            },
+                            {
+                              "expression": "$ctrl.allProductFunction()",
+                              "to": "onClick"
+                            }
+                          ]
+                        }
+                      ],
+                      "comments": ""
+                    },
+                    {
+                      "name": "div",
+                      "nodeName": "div",
+                      "elementId": "",
+                      "attributes": [
+                        {
+                          "property": "data-id",
+                          "value": "Im7xYm"
+                        }
+                      ],
+                      "classList": [],
+                      "conditionalClasses": [],
+                      "contentType": "text",
+                      "displayExpression": "",
+                      "events": {},
+                      "iterate": {
+                        "array": "",
+                        "variable": "",
+                        "trackByIndex": false
+                      },
+                      "styles": [
+                        {
+                          "property": "max-width",
+                          "value": "50%",
+                          "enabled": true
+                        }
+                      ],
+                      "children": [
+                        {
+                          "name": "Button",
+                          "nodeName": "bln-button",
+                          "elementId": "",
+                          "attributes": [
+                            {
+                              "property": "core",
+                              "value": ""
+                            },
+                            {
+                              "property": "data-id",
+                              "value": "iL9f2H"
+                            }
+                          ],
+                          "classList": [
+                            "selected-product-btn"
+                          ],
+                          "conditionalClasses": [],
+                          "contentType": "text",
+                          "displayExpression": "",
+                          "events": {},
+                          "iterate": {
+                            "array": "",
+                            "variable": "",
+                            "trackByIndex": false
+                          },
+                          "styles": [
+                            {
+                              "property": "--bln-button-default-bg-color",
+                              "value": "#ededed",
+                              "enabled": true
+                            },
+                            {
+                              "property": "--bln-button-default-hovered-bg-color",
+                              "value": "#bebebe",
+                              "enabled": true
+                            },
+                            {
+                              "property": "--bln-button-default-active-bg-color",
+                              "value": "#001452",
+                              "enabled": true
+                            },
+                            {
+                              "property": "--bln-button-default-active-text-color",
+                              "value": "#fff",
+                              "enabled": true
+                            }
+                          ],
+                          "children": [],
+                          "comments": "",
+                          "type": "core-component",
+                          "id": "button",
+                          "expressions": [
+                            {
+                              "expression": "\"Single Product\"",
+                              "to": "label"
+                            },
+                            {
+                              "expression": "$ctrl.selectedProductFunction()",
+                              "to": "onClick"
+                            }
+                          ]
+                        }
+                      ],
+                      "comments": ""
+                    }
+                  ],
+                  "comments": ""
+                }
+              ],
+              "comments": ""
+            }
+          ],
+          "comments": ""
+        },
+        {
+          "name": "div",
+          "nodeName": "div",
+          "elementId": "",
+          "attributes": [
+            {
+              "property": "data-id",
+              "value": "F7cpVc"
+            }
+          ],
+          "classList": [],
+          "conditionalClasses": [],
+          "contentType": "text",
+          "displayExpression": "",
+          "events": {},
+          "iterate": {
+            "array": "",
+            "variable": "",
+            "trackByIndex": false
+          },
+          "styles": [
+            {
+              "property": "display",
+              "value": "flex",
+              "enabled": true
+            },
+            {
+              "property": "max-width",
+              "value": "30%",
+              "enabled": true
+            },
+            {
+              "property": "margin-top",
+              "value": "15px",
+              "enabled": true
+            }
+          ],
+          "layout": {
+            "cell": {
+              "type": "box-item",
+              "growFactor": 1,
+              "shrinkFactor": 1,
+              "mainSize": "100%"
+            }
+          },
+          "children": [
+            {
+              "name": "div",
+              "nodeName": "div",
+              "elementId": "",
+              "attributes": [
+                {
+                  "property": "data-id",
+                  "value": "PWPpsY"
+                }
+              ],
+              "classList": [],
+              "conditionalClasses": [],
+              "contentType": "text",
+              "displayExpression": "$ctrl.showSingleProduct",
+              "events": {},
+              "iterate": {
+                "array": "",
+                "variable": "",
+                "trackByIndex": false
+              },
+              "styles": [
+                {
+                  "property": "display",
+                  "value": "flex",
+                  "enabled": true
+                },
+                {
+                  "property": "margin-top",
+                  "value": "5px",
+                  "enabled": true
+                },
+                {
+                  "property": "width",
+                  "value": "80%",
+                  "enabled": true
+                }
+              ],
+              "children": [
+                {
+                  "name": "div",
+                  "nodeName": "div",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "data-id",
+                      "value": "HLH-fo"
+                    }
+                  ],
+                  "classList": [
+                    "all-product-btn"
+                  ],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [
+                    {
+                      "property": "max-width",
+                      "value": "50%",
+                      "enabled": true
+                    },
+                    {
+                      "property": "margin-right",
+                      "value": "10px",
+                      "enabled": true
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "h5",
+                      "nodeName": "h5",
+                      "elementId": "",
+                      "attributes": [
+                        {
+                          "property": "data-id",
+                          "value": "hC3N0Q"
+                        }
+                      ],
+                      "classList": [],
+                      "conditionalClasses": [],
+                      "contentType": "text",
+                      "displayExpression": "",
+                      "events": {},
+                      "iterate": {
+                        "array": "",
+                        "variable": "",
+                        "trackByIndex": false
+                      },
+                      "styles": [
+                        {
+                          "property": "margin",
+                          "value": "0",
+                          "enabled": true
+                        },
+                        {
+                          "property": "padding",
+                          "value": "0",
+                          "enabled": true
+                        }
+                      ],
+                      "layout": {},
+                      "children": [
+                        {
+                          "name": "text",
+                          "nodeName": "text",
+                          "textContent": "Product ID",
+                          "evaluate": false
+                        }
+                      ],
+                      "comments": ""
+                    },
+                    {
+                      "name": "Text Input",
+                      "nodeName": "bln-text-input",
+                      "elementId": "",
+                      "attributes": [
+                        {
+                          "property": "core",
+                          "value": ""
+                        },
+                        {
+                          "property": "data-id",
+                          "value": "exjb_Z"
+                        }
+                      ],
+                      "classList": [
+                        "prodID"
+                      ],
+                      "conditionalClasses": [],
+                      "contentType": "text",
+                      "displayExpression": "",
+                      "events": {},
+                      "iterate": {
+                        "array": "",
+                        "variable": "",
+                        "trackByIndex": false
+                      },
+                      "styles": [],
+                      "children": [],
+                      "comments": "",
+                      "type": "core-component",
+                      "id": "text-input",
+                      "expressions": [
+                        {
+                          "expression": "\"\"",
+                          "to": "label"
+                        },
+                        {
+                          "expression": "$ctrl.productIDinput",
+                          "to": "value"
+                        },
+                        {
+                          "expression": "$ctrl.productIDinput",
+                          "to": "placeholder"
+                        }
+                      ],
+                      "formControl": {
+                        "modelName": "value"
+                      }
+                    }
+                  ],
+                  "comments": ""
+                },
+                {
+                  "name": "div",
+                  "nodeName": "div",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "data-id",
+                      "value": "g_4idI"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [
+                    {
+                      "property": "max-width",
+                      "value": "50%",
+                      "enabled": true
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "h5",
+                      "nodeName": "h5",
+                      "elementId": "",
+                      "attributes": [
+                        {
+                          "property": "data-id",
+                          "value": "V5sKus"
+                        }
+                      ],
+                      "classList": [],
+                      "conditionalClasses": [],
+                      "contentType": "text",
+                      "displayExpression": "",
+                      "events": {},
+                      "iterate": {
+                        "array": "",
+                        "variable": "",
+                        "trackByIndex": false
+                      },
+                      "styles": [
+                        {
+                          "property": "margin",
+                          "value": "0",
+                          "enabled": true
+                        },
+                        {
+                          "property": "padding",
+                          "value": "0",
+                          "enabled": true
+                        }
+                      ],
+                      "layout": {},
+                      "children": [
+                        {
+                          "name": "text",
+                          "nodeName": "text",
+                          "textContent": "Variant ID",
+                          "evaluate": false
+                        }
+                      ],
+                      "comments": ""
+                    },
+                    {
+                      "name": "Text Input",
+                      "nodeName": "bln-text-input",
+                      "elementId": "",
+                      "attributes": [
+                        {
+                          "property": "core",
+                          "value": ""
+                        },
+                        {
+                          "property": "data-id",
+                          "value": "6Nn123"
+                        }
+                      ],
+                      "classList": [
+                        "prodID"
+                      ],
+                      "conditionalClasses": [],
+                      "contentType": "text",
+                      "displayExpression": "",
+                      "events": {},
+                      "iterate": {
+                        "array": "",
+                        "variable": "",
+                        "trackByIndex": false
+                      },
+                      "styles": [],
+                      "children": [],
+                      "comments": "",
+                      "type": "core-component",
+                      "id": "text-input",
+                      "expressions": [
+                        {
+                          "expression": "\"\"",
+                          "to": "label"
+                        },
+                        {
+                          "expression": "$ctrl.variantIDinput",
+                          "to": "value"
+                        },
+                        {
+                          "expression": "$ctrl.variantIDinput",
+                          "to": "placeholder"
+                        }
+                      ],
+                      "formControl": {
+                        "modelName": "value"
+                      }
+                    }
+                  ],
+                  "comments": ""
+                }
+              ],
+              "comments": ""
+            },
+            {
+              "name": "div",
+              "nodeName": "div",
+              "elementId": "",
+              "attributes": [
+                {
+                  "property": "data-id",
+                  "value": "m7CgEV"
+                }
+              ],
+              "classList": [],
+              "conditionalClasses": [],
+              "contentType": "text",
+              "displayExpression": "",
+              "events": {},
+              "iterate": {
+                "array": "",
+                "variable": "",
+                "trackByIndex": false
+              },
+              "styles": [
+                {
+                  "property": "width",
+                  "value": "auto",
+                  "enabled": true
+                },
+                {
+                  "property": "display",
+                  "value": "block",
+                  "enabled": true
+                },
+                {
+                  "property": "margin-top",
+                  "value": "23px",
+                  "enabled": true
+                }
+              ],
+              "children": [
+                {
+                  "name": "Button",
+                  "nodeName": "bln-button",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    },
+                    {
+                      "property": "data-id",
+                      "value": "Had4YO"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [
+                    {
+                      "property": "--bln-button-default-bg-color",
+                      "value": "#031149",
+                      "enabled": true
+                    },
+                    {
+                      "property": "--bln-button-default-hovered-bg-color",
+                      "value": "#020e3a",
+                      "enabled": true
+                    },
+                    {
+                      "property": "--bln-button-default-active-bg-color",
+                      "value": "#020c33",
+                      "enabled": true
+                    },
+                    {
+                      "property": "--bln-button-default-text-color",
+                      "value": "#fff",
+                      "enabled": true
+                    }
+                  ],
+                  "children": [],
+                  "comments": "",
+                  "type": "core-component",
+                  "id": "button",
+                  "expressions": [
+                    {
+                      "expression": "$ctrl.handleSubmit()",
+                      "to": "onClick"
+                    }
+                  ]
+                }
+              ],
+              "comments": ""
+            }
+          ],
+          "comments": ""
+        }
+      ],
+      "comments": ""
+    }
+  ],
+  "variables": [
+    {
+      "name": "showSingleProduct",
+      "type": "property",
+      "description": "",
+      "value": "true"
+    },
+    {
+      "name": "allProductFunction",
+      "type": "method",
+      "description": "",
+      "body": "if ($ctrl.allProduct = true) {\n    $ctrl.singleProduct = false;\n    $ctrl.showSingleProduct = false;\n    $ctrl.forecastRequestType = 'orders';\n} else {\n    $ctrl.singleProduct = true;\n    $ctrl.showSingleProduct = true;\n}",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": []
+    },
+    {
+      "name": "selectedProductFunction",
+      "type": "method",
+      "description": "",
+      "body": "if ($ctrl.singleProduct = true) {\n    $ctrl.allProduct = false;\n    $ctrl.showSingleProduct = true;\n    $ctrl.forecastRequestType = 'single_product';\n} else {\n    $ctrl.singleProduct = false;\n    $ctrl.showSingleProduct = false;\n}",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": []
+    },
+    {
+      "name": "$state",
+      "type": "service"
+    },
+    {
+      "name": "handleSubmit",
+      "type": "method",
+      "description": "",
+      "body": "$ctrl.getSales()\n  .then(data => {\n    // Assuming $ctrl.fetchedData is where you store the fetched sales data\n    $ctrl.fetchedSales = data;\n\n    // Navigate to the 'results' state/page\n    $ctrl.$state.go('results');\n  })\n  .catch(error => {\n    // Handle error\n    console.error('Error fetching sales:', error);\n  });\n",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": []
+    },
+    {
+      "name": "salesForecastingApi",
+      "type": "open-api",
+      "id": "65f8fb38e84fea8b10b8ee09"
+    },
+    {
+      "name": "getSales",
+      "type": "method",
+      "description": "",
+      "body": "$ctrl.salesForecastingApi.service_Main({\n    startDate: $ctrl.startDate, \n    forecastLen: $ctrl.forecastLen,\n    forecastRequestType: $ctrl.forecastRequestType,\n    productId: $ctrl.productIDinput || null,\n    variantId: $ctrl.variantIDinput || null,\n    ngrokSkipBrowserWarning: 'asd'\n})\n.then(response => {\n   $ctrl.fetchedData = response.data\n   $ctrl.$notificationManager.show(\"Successfully processed the request\", {\n      delay: 2500,\n      icon: 'check',\n      color: 'success',\n    });\n})\n.catch(error => {\n    // Handle error\n     console.error('Error fetching data:', error);\n       $ctrl.$notificationManager.show(\"Error processing the request\", {\n      delay: 2500,\n      icon: 'error',\n      color: 'danger',\n    });\n});",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": []
+    },
+    {
+      "name": "$notificationManager",
+      "type": "service"
+    }
+  ],
+  "bindings": [
+    {
+      "name": "startDate",
+      "type": "=",
+      "description": "",
+      "propertyType": "property",
+      "default": ""
+    },
+    {
+      "name": "forecastLen",
+      "type": "=",
+      "description": "",
+      "propertyType": "property",
+      "default": ""
+    },
+    {
+      "name": "allProduct",
+      "type": "=",
+      "description": "",
+      "propertyType": "property",
+      "default": "true"
+    },
+    {
+      "name": "singleProduct",
+      "type": "=",
+      "description": "",
+      "propertyType": "property",
+      "default": ""
+    },
+    {
+      "name": "forecastRequestType",
+      "type": "=",
+      "description": "",
+      "propertyType": "property",
+      "default": ""
+    },
+    {
+      "name": "productIDinput",
+      "type": "=",
+      "description": "",
+      "propertyType": "property",
+      "default": ""
+    },
+    {
+      "name": "variantIDinput",
+      "type": "=",
+      "description": "",
+      "propertyType": "property",
+      "default": ""
+    },
+    {
+      "name": "fetchedData",
+      "type": "=",
+      "description": "",
+      "propertyType": "array",
+      "default": ""
+    }
+  ],
+  "modules": [],
+  "externalScripts": [],
+  "externalStylesheets": []
+}

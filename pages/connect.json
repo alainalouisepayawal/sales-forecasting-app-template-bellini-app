@@ -1,0 +1,815 @@
+{
+  "name": "connect",
+  "type": "page",
+  "url": "/connect",
+  "params": {},
+  "variables": [
+    {
+      "name": "initialize",
+      "type": "method",
+      "description": "",
+      "body": "$ctrl.$state.go('home')",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": []
+    },
+    {
+      "name": "$state",
+      "type": "service"
+    },
+    {
+      "name": "handleProceed",
+      "type": "method",
+      "description": "",
+      "body": "// Construct the complete URL for the Shopify Order API\nvar apiUrl = 'https://quickstart-7a27d460.myshopify.com/admin/api/2024-01/orders.json';\n\n// Set up the headers for authentication and CORS\nvar headers = {\n    'X-BELLINI-PROXY-TARGET': 'https://' + $ctrl.apiSettings.storeName + '.myshopify.com/',\n    'Authorization': 'Basic ' + btoa('1d1313f072fd9804c2245ca71f3461b1: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'),\n    'Access-Control-Allow-Origin': '*',\n    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',\n    'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Authorization'\n};\n\n// Make a GET request to the Shopify Order API\n$ctrl.$http.get(apiUrl, { headers: headers })\n    .then(function(response) {\n        // Handle successful response\n        console.log('Orders:', response.data.orders);\n    })\n    .catch(function(error) {\n        // Handle error\n        console.error('Error retrieving orders:', error);\n    });\n",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": []
+    },
+    {
+      "name": "apiSettings",
+      "type": "object",
+      "description": "",
+      "properties": [
+        {
+          "name": "apiKey",
+          "type": "property",
+          "description": "",
+          "value": ""
+        },
+        {
+          "name": "accessToken",
+          "type": "property",
+          "description": "",
+          "value": ""
+        },
+        {
+          "name": "storeName",
+          "type": "property",
+          "description": "",
+          "value": ""
+        },
+        {
+          "name": "webHookVersion",
+          "type": "property",
+          "description": "",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "name": "salesForecastingApi",
+      "type": "open-api",
+      "id": "65f8fb38e84fea8b10b8ee09"
+    },
+    {
+      "name": "$http",
+      "type": "service"
+    }
+  ],
+  "children": [
+    {
+      "name": "div",
+      "nodeName": "div",
+      "elementId": "",
+      "attributes": [
+        {
+          "property": "data-id",
+          "value": "5Z8gnC"
+        }
+      ],
+      "classList": [],
+      "conditionalClasses": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": ""
+      },
+      "styles": [
+        {
+          "property": "display",
+          "value": "flex",
+          "enabled": true
+        },
+        {
+          "property": "height",
+          "value": "100vh",
+          "enabled": true
+        },
+        {
+          "property": "width",
+          "value": "100vw",
+          "enabled": true
+        },
+        {
+          "property": "margin",
+          "value": "auto",
+          "enabled": true
+        },
+        {
+          "property": "color",
+          "value": "#000000",
+          "enabled": true
+        },
+        {
+          "property": "background-color",
+          "value": "#f5f5f5",
+          "enabled": true
+        }
+      ],
+      "children": [
+        {
+          "name": "div",
+          "nodeName": "div",
+          "elementId": "",
+          "attributes": [
+            {
+              "property": "data-id",
+              "value": "LuV10e"
+            }
+          ],
+          "classList": [
+            "login-container"
+          ],
+          "conditionalClasses": [],
+          "contentType": "text",
+          "displayExpression": "",
+          "events": {},
+          "iterate": {
+            "array": "",
+            "variable": ""
+          },
+          "styles": [
+            {
+              "property": "display",
+              "value": "flex",
+              "enabled": true
+            },
+            {
+              "property": "align-items",
+              "value": "center",
+              "enabled": true
+            },
+            {
+              "property": "height",
+              "value": "500px",
+              "enabled": true
+            },
+            {
+              "property": "min-height",
+              "value": "500px",
+              "enabled": true
+            },
+            {
+              "property": "max-height",
+              "value": "500px",
+              "enabled": true
+            }
+          ],
+          "children": [
+            {
+              "name": "div",
+              "nodeName": "div",
+              "elementId": "",
+              "attributes": [
+                {
+                  "property": "data-id",
+                  "value": "NzGHHf"
+                }
+              ],
+              "classList": [],
+              "conditionalClasses": [],
+              "contentType": "text",
+              "displayExpression": "",
+              "events": {},
+              "iterate": {
+                "array": "",
+                "variable": ""
+              },
+              "styles": [
+                {
+                  "property": "margin",
+                  "value": "auto",
+                  "enabled": true
+                }
+              ],
+              "children": [
+                {
+                  "name": "h3",
+                  "nodeName": "h3",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "data-id",
+                      "value": "jcq_YP"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "html",
+                  "displayExpression": "",
+                  "events": {},
+                  "html": {
+                    "content": "Sales Forecasting",
+                    "evaluate": false
+                  },
+                  "iterate": {
+                    "array": "",
+                    "variable": ""
+                  },
+                  "styles": [
+                    {
+                      "property": "font-family",
+                      "value": "Helvetica",
+                      "enabled": true
+                    },
+                    {
+                      "property": "margin-top",
+                      "value": "3%",
+                      "enabled": true
+                    },
+                    {
+                      "property": "font-weight",
+                      "value": "bold",
+                      "enabled": true
+                    },
+                    {
+                      "property": "font-size",
+                      "value": "26px",
+                      "enabled": true
+                    }
+                  ],
+                  "children": [],
+                  "comments": ""
+                },
+                {
+                  "name": "h5",
+                  "nodeName": "h5",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "data-id",
+                      "value": "RSR_eX"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "html",
+                  "displayExpression": "",
+                  "events": {},
+                  "html": {
+                    "content": "Application for Bellini",
+                    "evaluate": false
+                  },
+                  "iterate": {
+                    "array": "",
+                    "variable": ""
+                  },
+                  "styles": [
+                    {
+                      "property": "font-family",
+                      "value": "Helvetica",
+                      "enabled": true
+                    },
+                    {
+                      "property": "font-weight",
+                      "value": "normal",
+                      "enabled": true
+                    },
+                    {
+                      "property": "font-style",
+                      "value": "normal",
+                      "enabled": true
+                    },
+                    {
+                      "property": "font-size",
+                      "value": "20px",
+                      "enabled": true
+                    },
+                    {
+                      "property": "margin-top",
+                      "value": "3%",
+                      "enabled": true
+                    }
+                  ],
+                  "children": [],
+                  "comments": ""
+                },
+                {
+                  "name": "hr",
+                  "nodeName": "hr",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "data-id",
+                      "value": "QpMo4g"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": ""
+                  },
+                  "styles": [
+                    {
+                      "property": "margin",
+                      "value": "1rem 0 1rem 0",
+                      "enabled": true
+                    }
+                  ],
+                  "children": [],
+                  "comments": ""
+                },
+                {
+                  "name": "Text Input",
+                  "nodeName": "bln-text-input",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    },
+                    {
+                      "property": "data-id",
+                      "value": "KXjZJy"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {
+                    "keypress": "$ctrl.setToken($event)"
+                  },
+                  "iterate": {
+                    "array": "",
+                    "variable": ""
+                  },
+                  "styles": [],
+                  "children": [],
+                  "comments": "",
+                  "type": "core-component",
+                  "id": "text-input",
+                  "expressions": [
+                    {
+                      "expression": "\"\"",
+                      "to": "label"
+                    },
+                    {
+                      "expression": "\"API key\"",
+                      "to": "placeholder"
+                    },
+                    {
+                      "expression": "$ctrl.apiSettings.apiKey",
+                      "to": "value"
+                    }
+                  ],
+                  "formControl": {
+                    "modelName": "value"
+                  }
+                },
+                {
+                  "name": "Text Input",
+                  "nodeName": "bln-text-input",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    },
+                    {
+                      "property": "data-id",
+                      "value": "D3Nuk9"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {
+                    "keypress": "$ctrl.setToken($event)"
+                  },
+                  "iterate": {
+                    "array": "",
+                    "variable": ""
+                  },
+                  "styles": [],
+                  "children": [],
+                  "comments": "",
+                  "type": "core-component",
+                  "id": "text-input",
+                  "expressions": [
+                    {
+                      "expression": "\"\"",
+                      "to": "label"
+                    },
+                    {
+                      "expression": "\"Access Token\"",
+                      "to": "placeholder"
+                    },
+                    {
+                      "expression": "$ctrl.apiSettings.accessToken",
+                      "to": "value"
+                    }
+                  ],
+                  "formControl": {
+                    "modelName": "value"
+                  }
+                },
+                {
+                  "name": "Text Input",
+                  "nodeName": "bln-text-input",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    },
+                    {
+                      "property": "data-id",
+                      "value": "tLLLK1"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {
+                    "keypress": "$ctrl.setToken($event)"
+                  },
+                  "iterate": {
+                    "array": "",
+                    "variable": ""
+                  },
+                  "styles": [],
+                  "children": [],
+                  "comments": "",
+                  "type": "core-component",
+                  "id": "text-input",
+                  "expressions": [
+                    {
+                      "expression": "\"\"",
+                      "to": "label"
+                    },
+                    {
+                      "expression": "\"Store Name\"",
+                      "to": "placeholder"
+                    },
+                    {
+                      "expression": "$ctrl.apiSettings.storeName",
+                      "to": "value"
+                    }
+                  ],
+                  "formControl": {
+                    "modelName": "value"
+                  }
+                },
+                {
+                  "name": "Text Input",
+                  "nodeName": "bln-text-input",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    },
+                    {
+                      "property": "data-id",
+                      "value": "72oOBx"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {
+                    "keypress": "$ctrl.setToken($event)"
+                  },
+                  "iterate": {
+                    "array": "",
+                    "variable": ""
+                  },
+                  "styles": [],
+                  "children": [],
+                  "comments": "",
+                  "type": "core-component",
+                  "id": "text-input",
+                  "expressions": [
+                    {
+                      "expression": "\"\"",
+                      "to": "label"
+                    },
+                    {
+                      "expression": "\"Webhook Version\"",
+                      "to": "placeholder"
+                    },
+                    {
+                      "expression": "$ctrl.apiSettings.webHookVersion",
+                      "to": "value"
+                    }
+                  ],
+                  "formControl": {
+                    "modelName": "value"
+                  }
+                },
+                {
+                  "name": "div",
+                  "nodeName": "div",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "data-id",
+                      "value": "nQ5TrD"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": ""
+                  },
+                  "styles": [
+                    {
+                      "property": "width",
+                      "value": "fit-content",
+                      "enabled": true
+                    },
+                    {
+                      "property": "margin-right",
+                      "value": "auto",
+                      "enabled": true
+                    },
+                    {
+                      "property": "margin-left",
+                      "value": "auto",
+                      "enabled": true
+                    },
+                    {
+                      "property": "margin-top",
+                      "value": "5%",
+                      "enabled": true
+                    }
+                  ],
+                  "children": [
+                    {
+                      "name": "Button",
+                      "nodeName": "bln-button",
+                      "elementId": "",
+                      "attributes": [
+                        {
+                          "property": "core",
+                          "value": ""
+                        },
+                        {
+                          "property": "data-id",
+                          "value": "qEJdl1"
+                        }
+                      ],
+                      "classList": [],
+                      "conditionalClasses": [],
+                      "contentType": "text",
+                      "displayExpression": "",
+                      "events": {},
+                      "iterate": {
+                        "array": "",
+                        "variable": ""
+                      },
+                      "styles": [
+                        {
+                          "property": "--bln-button-primary-bg-color",
+                          "value": "white",
+                          "enabled": true
+                        },
+                        {
+                          "property": "--bln-button-primary-hovered-bg-color",
+                          "value": "#cccccc",
+                          "enabled": true
+                        },
+                        {
+                          "property": "--bln-button-primary-active-bg-color",
+                          "value": "#b3b3b3",
+                          "enabled": true
+                        },
+                        {
+                          "property": "--bln-button-primary-text-color",
+                          "value": "#000000",
+                          "enabled": true
+                        },
+                        {
+                          "property": "--bln-button-padding",
+                          "value": ".75rem 1.5rem .75rem 1.5rem",
+                          "enabled": true
+                        },
+                        {
+                          "property": "--bln-button-margin",
+                          "value": "0%",
+                          "enabled": true
+                        },
+                        {
+                          "property": "--bln-button-roundness",
+                          "value": ".155rem",
+                          "enabled": true
+                        },
+                        {
+                          "property": "--bln-button-primary-hovered-text-color",
+                          "value": "#ffffff",
+                          "enabled": true
+                        },
+                        {
+                          "property": "border",
+                          "value": "1px solid gray",
+                          "enabled": true
+                        }
+                      ],
+                      "children": [],
+                      "comments": "",
+                      "type": "core-component",
+                      "id": "button",
+                      "expressions": [
+                        {
+                          "expression": "$ctrl.handleProceed()",
+                          "to": "onClick"
+                        },
+                        {
+                          "expression": "\"Proceed\"",
+                          "to": "label"
+                        },
+                        {
+                          "expression": "({\n  \"type\": \"font-icon\",\n  \"style\": \"solid\",\n  \"name\": \"link\",\n  \"position\": \"left\"\n})",
+                          "to": "icon"
+                        },
+                        {
+                          "expression": "\"primary\"",
+                          "to": "type"
+                        }
+                      ]
+                    }
+                  ],
+                  "comments": ""
+                }
+              ],
+              "comments": ""
+            }
+          ],
+          "comments": ""
+        },
+        {
+          "name": "div",
+          "nodeName": "div",
+          "elementId": "",
+          "attributes": [
+            {
+              "property": "data-id",
+              "value": "gA565t"
+            }
+          ],
+          "classList": [],
+          "conditionalClasses": [],
+          "contentType": "text",
+          "displayExpression": "$ctrl.status === 'loading'",
+          "events": {},
+          "iterate": {
+            "array": "",
+            "variable": ""
+          },
+          "styles": [
+            {
+              "property": "margin",
+              "value": "auto",
+              "enabled": true
+            },
+            {
+              "property": "text-align",
+              "value": "center",
+              "enabled": true
+            }
+          ],
+          "children": [
+            {
+              "name": "div",
+              "nodeName": "div",
+              "elementId": "",
+              "attributes": [
+                {
+                  "property": "data-id",
+                  "value": "WfeX-Y"
+                }
+              ],
+              "classList": [],
+              "conditionalClasses": [],
+              "contentType": "text",
+              "displayExpression": "",
+              "events": {},
+              "iterate": {
+                "array": "",
+                "variable": ""
+              },
+              "styles": [
+                {
+                  "property": "width",
+                  "value": "fit-content",
+                  "enabled": true
+                },
+                {
+                  "property": "min-width",
+                  "value": "",
+                  "enabled": true
+                },
+                {
+                  "property": "max-width",
+                  "value": "",
+                  "enabled": true
+                },
+                {
+                  "property": "margin",
+                  "value": "auto",
+                  "enabled": true
+                }
+              ],
+              "children": [
+                {
+                  "name": "Spinner",
+                  "nodeName": "bln-spinner",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    },
+                    {
+                      "property": "data-id",
+                      "value": "1ttE_j"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": ""
+                  },
+                  "styles": [],
+                  "children": [],
+                  "comments": "",
+                  "type": "core-component",
+                  "id": "spinner",
+                  "expressions": []
+                }
+              ],
+              "comments": ""
+            },
+            {
+              "name": "h4",
+              "nodeName": "h4",
+              "elementId": "",
+              "attributes": [
+                {
+                  "property": "data-id",
+                  "value": "lM1NoY"
+                }
+              ],
+              "classList": [],
+              "conditionalClasses": [],
+              "contentType": "text",
+              "displayExpression": "",
+              "events": {},
+              "iterate": {
+                "array": "",
+                "variable": ""
+              },
+              "styles": [],
+              "children": [
+                {
+                  "name": "text",
+                  "nodeName": "text",
+                  "textContent": "Validating account credentials",
+                  "evaluate": false
+                }
+              ],
+              "comments": ""
+            }
+          ],
+          "comments": ""
+        }
+      ],
+      "comments": ""
+    }
+  ]
+}
