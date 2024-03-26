@@ -324,7 +324,7 @@
           "attributes": [
             {
               "property": "data-id",
-              "value": "-0Tu4D"
+              "value": "xGCPSm"
             }
           ],
           "classList": [],
@@ -346,7 +346,92 @@
               "attributes": [
                 {
                   "property": "data-id",
-                  "value": "LJKyHr"
+                  "value": "3vIwMt"
+                }
+              ],
+              "classList": [
+                "chart"
+              ],
+              "conditionalClasses": [],
+              "contentType": "text",
+              "displayExpression": "",
+              "events": {},
+              "iterate": {
+                "array": "",
+                "variable": "",
+                "trackByIndex": false
+              },
+              "styles": [
+                {
+                  "property": "margin-bottom",
+                  "value": "20px",
+                  "enabled": true
+                }
+              ],
+              "children": [
+                {
+                  "name": "Chart",
+                  "nodeName": "bln-chart",
+                  "elementId": "",
+                  "attributes": [
+                    {
+                      "property": "core",
+                      "value": ""
+                    },
+                    {
+                      "property": "data-id",
+                      "value": "KiAAhV"
+                    }
+                  ],
+                  "classList": [],
+                  "conditionalClasses": [],
+                  "contentType": "text",
+                  "displayExpression": "",
+                  "events": {},
+                  "iterate": {
+                    "array": "",
+                    "variable": "",
+                    "trackByIndex": false
+                  },
+                  "styles": [],
+                  "children": [],
+                  "comments": "",
+                  "type": "core-component",
+                  "id": "chart",
+                  "expressions": [
+                    {
+                      "expression": "[{\n    data: $ctrl.fetchedData[0].data,\n    label: \"Sales\",\n    fill: false,\n    parsing: {\n        xAxisKey: \"Date\",\n        yAxisKey: \"PredictedDailySales\"\n    },\n    backgroundColor: [\"#031149\"]\n}]",
+                      "to": "datasets"
+                    },
+                    {
+                      "expression": "\"Date\"",
+                      "to": "axisNameX"
+                    },
+                    {
+                      "expression": "\"Predicted Daily Sales\"",
+                      "to": "axisNameY"
+                    },
+                    {
+                      "expression": "\"Sales Forecast\"",
+                      "to": "title"
+                    },
+                    {
+                      "expression": "[\n\n]",
+                      "to": "labels"
+                    }
+                  ]
+                }
+              ],
+              "comments": ""
+            },
+            {
+              "name": "div",
+              "nodeName": "div",
+              "elementId": "",
+              "attributes": [
+                {
+                  "property": "data-id",
+                  "value": "yh0HB0"
                 }
               ],
               "classList": [],
@@ -359,40 +444,20 @@
                 "variable": "",
                 "trackByIndex": false
               },
-              "styles": [
-                {
-                  "enabled": true,
-                  "property": "height",
-                  "value": "100% !important"
-                },
-                {
-                  "enabled": true,
-                  "property": "width",
-                  "value": "100% !important"
-                },
-                {
-                  "property": "margin-top",
-                  "value": "20px",
-                  "enabled": true
-                }
-              ],
-              "layout": {
-                "container": {
-                  "type": "box",
-                  "orientation": "row",
-                  "crossAxisAlignment": "stretch",
-                  "items": []
-                }
-              },
+              "styles": [],
               "children": [
                 {
-                  "name": "div",
-                  "nodeName": "div",
+                  "name": "Table",
+                  "nodeName": "bln-table",
                   "elementId": "",
                   "attributes": [
                     {
+                      "property": "core",
+                      "value": ""
+                    },
+                    {
                       "property": "data-id",
-                      "value": "9Z4VS4"
+                      "value": "OTtq64"
                     }
                   ],
                   "classList": [],
@@ -407,175 +472,41 @@
                   },
                   "styles": [
                     {
-                      "property": "padding",
-                      "value": "10px",
+                      "property": "--bln-table-header-bg-color",
+                      "value": "#031149",
+                      "enabled": true
+                    },
+                    {
+                      "property": "--bln-table-header-text-color",
+                      "value": "#fff",
+                      "enabled": true
+                    },
+                    {
+                      "property": "--bln-table-bg-color",
+                      "value": "#ffffff",
+                      "enabled": true
+                    },
+                    {
+                      "property": "--bln-table-hovered-bg-color",
+                      "value": "#cccccc",
+                      "enabled": true
+                    },
+                    {
+                      "property": "--bln-table-secondary-bg-color",
+                      "value": "#ebebeb",
                       "enabled": true
                     }
                   ],
-                  "layout": {
-                    "cell": {
-                      "type": "box-item",
-                      "growFactor": 1,
-                      "shrinkFactor": 1,
-                      "mainSize": "100%"
-                    }
-                  },
-                  "children": [
+                  "children": [],
+                  "comments": "",
+                  "type": "core-component",
+                  "id": "table",
+                  "expressions": [
                     {
-                      "name": "Chart",
-                      "nodeName": "bln-chart",
-                      "elementId": "",
-                      "attributes": [
-                        {
-                          "property": "data-id",
-                          "value": "yr5vJp"
-                        },
-                        {
-                          "property": "core",
-                          "value": ""
-                        }
-                      ],
-                      "classList": [],
-                      "conditionalClasses": [],
-                      "contentType": "text",
-                      "displayExpression": "",
-                      "events": {},
-                      "iterate": {
-                        "array": "",
-                        "variable": "",
-                        "trackByIndex": false
-                      },
-                      "styles": [],
-                      "children": [],
-                      "comments": "",
-                      "type": "core-component",
-                      "id": "chart",
-                      "expressions": [
-                        {
-                          "expression": "[{\n    data: $ctrl.fetchedData[0].data,\n    label: \"Sales\",\n    fill: false,\n    parsing: {\n        xAxisKey: \"Date\",\n        yAxisKey: \"PredictedDailySales\"\n    },\n    backgroundColor: [\"#031149\"]\n}]",
-                          "to": "datasets"
-                        },
-                        {
-                          "expression": "\"Predicted Daily Sales\"",
-                          "to": "axisNameX"
-                        },
-                        {
-                          "expression": "\"Date\"",
-                          "to": "axisNameY"
-                        },
-                        {
-                          "expression": "\"Sales Forecast\"",
-                          "to": "title"
-                        },
-                        {
-                          "expression": "[\n\n]",
-                          "to": "labels"
-                        }
-                      ]
+                      "expression": "$ctrl.fetchedData[0].data",
+                      "to": "data"
                     }
-                  ],
-                  "comments": ""
-                },
-                {
-                  "name": "div",
-                  "nodeName": "div",
-                  "elementId": "",
-                  "attributes": [
-                    {
-                      "property": "data-id",
-                      "value": "pkp7Qd"
-                    }
-                  ],
-                  "classList": [],
-                  "conditionalClasses": [],
-                  "contentType": "text",
-                  "displayExpression": "",
-                  "events": {},
-                  "iterate": {
-                    "array": "",
-                    "variable": "",
-                    "trackByIndex": false
-                  },
-                  "styles": [
-                    {
-                      "property": "max-height",
-                      "value": "100vh",
-                      "enabled": true
-                    }
-                  ],
-                  "layout": {
-                    "cell": {
-                      "type": "box-item",
-                      "growFactor": 1,
-                      "shrinkFactor": 1,
-                      "mainSize": "100%"
-                    }
-                  },
-                  "children": [
-                    {
-                      "name": "Table",
-                      "nodeName": "bln-table",
-                      "elementId": "",
-                      "attributes": [
-                        {
-                          "property": "data-id",
-                          "value": "dgZjk_"
-                        },
-                        {
-                          "property": "core",
-                          "value": ""
-                        }
-                      ],
-                      "classList": [],
-                      "conditionalClasses": [],
-                      "contentType": "text",
-                      "displayExpression": "",
-                      "events": {},
-                      "iterate": {
-                        "array": "",
-                        "variable": "",
-                        "trackByIndex": false
-                      },
-                      "styles": [
-                        {
-                          "property": "--bln-table-header-bg-color",
-                          "value": "#031149",
-                          "enabled": true
-                        },
-                        {
-                          "property": "--bln-table-header-text-color",
-                          "value": "#fff",
-                          "enabled": true
-                        },
-                        {
-                          "property": "--bln-table-bg-color",
-                          "value": "#ffffff",
-                          "enabled": true
-                        },
-                        {
-                          "property": "--bln-table-hovered-bg-color",
-                          "value": "#cccccc",
-                          "enabled": true
-                        },
-                        {
-                          "property": "--bln-table-secondary-bg-color",
-                          "value": "#ebebeb",
-                          "enabled": true
-                        }
-                      ],
-                      "children": [],
-                      "comments": "",
-                      "type": "core-component",
-                      "id": "table",
-                      "expressions": [
-                        {
-                          "expression": "$ctrl.fetchedData[0].data",
-                          "to": "data"
-                        }
-                      ]
-                    }
-                  ],
-                  "comments": ""
+                  ]
                 }
               ],
               "comments": ""
