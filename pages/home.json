@@ -35,7 +35,7 @@
       "name": "selectedProductFunction",
       "type": "method",
       "description": "",
-      "body": "if ($ctrl.singleProduct = true) {\n    $ctrl.allProduct = false;\n    $ctrl.showSingleProduct = true;\n    $ctrl.forecastRequestType = 'single_product';\n} else {\n    $ctrl.singleProduct = false;\n    $ctrl.showSingleProduct = false;\n}",
+      "body": "",
       "invokeOnLoad": false,
       "isAsync": false,
       "returnType": {
@@ -65,18 +65,6 @@
           "type": "property",
           "description": "",
           "value": ""
-        },
-        {
-          "name": "getRequests",
-          "type": "method",
-          "description": "This function is for the GET method of the API",
-          "body": "// Assuming $ctrl.salesForecastingApi.service_Main is an AngularJS service or a similar service that returns a promise when called\n$ctrl.salesForecastingApi.service_Main({\n    startDate: '2024-02-01', \n    forecastLen: 5,\n    forecastRequestType: 'orders',\n    productId: 8098965881074,\n    variantId: 45184385286386\n})\n.then(response => {\n    // Assuming response.data contains the fetched data\n    $ctrl.fetchedData = response.data;\n})\n.catch(error => {\n    // Handle error\n    console.error('Error fetching data:', error);\n});\n",
-          "invokeOnLoad": true,
-          "isAsync": false,
-          "returnType": {
-            "name": "any"
-          },
-          "parameters": []
         },
         {
           "name": "productIDinput",
